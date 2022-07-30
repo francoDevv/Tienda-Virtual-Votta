@@ -192,12 +192,17 @@ footer{
     width: 100%;
 }
 
+.footerRedes{
+    text-decoration: none;
+    width: 25%;
+}
+
 .imgFooterRRSS{
     display: flex;
     flex-direction: row;
     align-items: center;
-    width: 28%;
-    height: 20%;
+    font-size: 100%;
+    color: black;
 }
 
 .footerMediosDePago{
@@ -208,13 +213,17 @@ footer{
     width: 100%;
 }
 
+.iconMediosDePago{
+    font-size: 100%;
+    margin-top: 2%;
+}
+
 .imgFooterMediosDePago{
     display: flex;
     flex-direction: row;
     align-items: center;
     margin-top: 2%;
-    width: 7%;
-    height: 5%;
+    width: 30px;
 }
 
 .contacto{
@@ -239,9 +248,8 @@ footer{
 }
 
 .footerContacto{
-    width: 35px;
-    height: 35px;
-    margin: 8px 0px;
+    font-size: 100%;
+    margin: 8px 5px;
 }
 
 .footerMapa{
@@ -365,7 +373,11 @@ footer{
         display: flex;
         flex-direction: row;
         align-items: center;
-        width: 30px;
+        font-size: 200%;
+    }
+
+    .iconMediosDePago{
+        font-size: 200%;
     }
 
     .imgFooterMediosDePago{
@@ -373,8 +385,7 @@ footer{
         flex-direction: row;
         align-items: center;
         margin-top: 2%;
-        width: 30px;
-        height: 25px;
+        width: 60px;
     }
 
     .contacto{
@@ -389,7 +400,7 @@ footer{
         display: flex;
         flex-direction: column;
         font-family: "Roboto", sans-serif;
-        font-size: 1.2rem;
+        font-size: 1.5rem;
     }
 
     .contactoParrafo{
@@ -399,8 +410,8 @@ footer{
     }
 
     .footerContacto{
-        width: 40px;
-        height: 40px;
+        font-size: 120%;
+        margin: 10px 10px;
     }
 
     .footerMapa{
