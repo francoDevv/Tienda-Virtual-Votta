@@ -5,31 +5,56 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="shortcut icon" href="../assets/images/logoheader.jpg" type="image/x-icon">
+        <link rel="shortcut icon" href="../assets/images/logo.jpg" type="image/x-icon">
         <script src="https://kit.fontawesome.com/78f212031c.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
         <link href="css/hover.css" rel="stylesheet" media="all">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link rel="stylesheet" href="../css/styles.css">
         <title>Contacto - Capricho</title>
     </head>
     <!-- FIN HEAD -->
     <!-- INICIO BODY -->
     <body>
-        <div class="container">
+        <div>
             <!-- INICIO HEADER-->
-            <header class="header">
+            <header class="header shadow p-3 mb-5 bg-body rounded">
                 <!-- INICIO MENU -->
-                <nav class="navbar">
-                    <a href="../index.html"><img src="../assets/images/logoheader.jpg" alt="Logo" class="logoHeader"></a>
-                    <ul class="menu">
-                        <li><a href="../index.html" class="hvr-grow hvr-underline-from-left">Inicio</a></li>
-                        <li><a href="./chicos.html" class="hvr-grow hvr-underline-from-left">Niños</a></li>
-                        <li><a href="./hombres.html" class="hvr-grow hvr-underline-from-left">Hombres</a></li>
-                        <li><a href="./mujeres.html" class="hvr-grow hvr-underline-from-left">Mujeres</a></li>
-                        <li><a href="./nosotros.html" class="hvr-grow hvr-underline-from-left">Nosotros</a></li>
-                        <li><a href="#" class="hvr-grow hvr-underline-from-left">Contacto</a></li>
-                    </ul>    
-                </nav>
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="../index.html">
+                            <img src="../assets/images/logo.jpg" alt="" class="logoHeader">
+                        </a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+                            <ul class="navbar-nav mb-2 mb-lg-0 margins">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="../pages/chicos.html">Niños</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="../pages/hombres.html">Hombres</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="../pages/mujeres.html">Mujeres</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="../pages/nosotros.html">Mas Info</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#">Contacto</a>
+                                </li>
+                            </ul>
+                            <form class="d-flex ">
+                                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            </form>
+                        </div>
+                    </div>
+                  </nav>
                 <!-- FIN MENU -->
             </header>
             <!-- FIN HEADER-->
@@ -37,25 +62,47 @@
             <main>
                 <section>
                     <div class="tituloPrincipal">
-                        <h1>CONTACTO</h1>
+                        <h1 class="titulo">CONTACTO</h1>
                     </div>
                 </section>
-                <section class="colorFondo">
+                <section>
                     <form action="" class="formulario">
-                        <div class="formularioDiv">
-                            <label for="name" class="formularioLabel">NOMBRE</label>
-                            <input type="text" id="name" class="formularioInput" placeholder="Nombre" required>
+                        <div class="row">
+                            <div class="col">
+                                <label for="name">NOMBRE</label>
+                                <input type="text" class="form-control" placeholder="Nombre" aria-label="First name" required>
+                            </div>
+                            <div class="col">
+                                <label for="name">APELLIDO</label>
+                                <input type="text" class="form-control" placeholder="Apellido" aria-label="Last name" required>
+                            </div>
                         </div>
-                        <div class="formularioDiv">
+                        <div class="mb-3 inputEmail">
+                            <label for="exampleFormControlInput1" class="form-label">CORREO ELECTRONICO</label>
+                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="example@email.com" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlTextarea1" class="form-label">CONSULTA</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" cols="30" rows="10" placeholder="Escribe aquí tu consulta ..." required></textarea>
+                        </div>
+
+
+                        <!-- <div class="row">
+                            <div class="col">
+                                <label for="name">CORREO ELECTRONICO</label>
+                                <input type="text" class="form-control" placeholder="example@email.com" aria-label="Email">
+                            </div>
+                        </div> -->
+                        <!-- <div class="formularioDiv">
                             <label for="email" class="formularioLabel">CORREO ELECTRONICO</label>
                             <input type="email" id="email" class="formularioInput" placeholder="exameple@email.com" required>
-                        </div>
-                        <div class="formularioDiv">
+                        </div> -->
+                        <!-- <div class="formularioDiv">
                             <label for="message" class="formularioLabel">CONSULTA</label>
                             <textarea name="" id="" cols="30" rows="10" class="formularioInput" required></textarea>
-                        </div>
+                        </div> -->
                         <div class="formulario">    
-                            <input type="submit" class="button hvr-shutter-in-horizontal" value="ENVIAR">
+                            <input type="submit" class="rounded-pill button hvr-shutter-in-horizontal" value="ENVIAR">
                         </div>
                     </form>
                 </section>
@@ -65,7 +112,7 @@
             <footer class="footer">
                 <div class="footerDiv">
                     <div class="footerLogo">
-                        <a href="../index.html"><img src="../assets/images/logofooter.jpg" class="logoFooter" alt="Logo"></a>
+                        <a href="index.html"><img src="../assets/images/logo.jpg" class="logoFooter" alt="Logo"></a>
                     </div>
                         <!-- REDES SOCIALES -->
                     <div class="footerRRSS">
@@ -101,6 +148,7 @@
             </footer>
             <!-- FIN FOOTER -->
         </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     </body>
     <!-- FIN BODY -->
 </html>
