@@ -19,6 +19,7 @@
 
 header{
     grid-area: header;
+    width: 100%;
 }
 
 .header{
@@ -35,6 +36,11 @@ header{
     justify-content: space-between;
     align-items: center;
     width: 100%;
+}
+
+.margins{
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .logoHeader {
@@ -129,6 +135,11 @@ h3{
     padding: 10px;
     display: flex;
     flex-direction: column;
+    width: 100%;
+}
+
+.col-ancho{
+    width: 45%;
 }
 
 .inputEmail{
@@ -148,6 +159,7 @@ h3{
 footer{
     grid-area: footer;
     background-color: black;
+    margin-top: 10px;
 }
 
 .footer a{
@@ -247,10 +259,7 @@ footer{
 
 @media screen and (min-width: 768px) {
     .header{
-        background-color: #E2CAD0;
-        font-style: normal;
-        font-family: 'Montserrat', sans-serif;
-        font-size: 1.3rem;;
+        font-size: 1.7rem;;
         display: flex;
         justify-content: center;
     }
@@ -260,203 +269,11 @@ footer{
         justify-content: space-between;
         align-items: center;
         width: 100%;
-    }
-    
-    .menu {
-        display: flex;
-        flex-direction: row;
-        margin-right: 10px;
-    }
-    
-    .menu li{
-        list-style-type: none;
-        display: flex;
-        justify-content: center;
-        padding: 7px;
-    }
-    
-    .menu li a{
-        text-decoration: none;
-        color: black;
-        display: flex;
     }
     
     .logoHeader {
         width: 200px;
         height: 5vh;
-    }
-
-    .imgPrincipalMedidas{
-        width: 90%;
-        height: 25vh;
-    }
-
-    .tituloPrincipal{
-        text-align: center;
-        font-family: 'Montserrat', sans-serif;
-        font-size: 2rem;
-        background-color: #ADBBD7;
-        padding: 5px;
-    }
-
-    .imgProductos{
-        background-color: #B5DDE3;
-        display: flex;
-        justify-content: space-evenly;
-        flex-wrap: wrap;
-        width: 100%;
-    }
-    
-    .imgProductosMedidas{
-        display: flex;
-        width: 80%;
-        padding: 7px;
-    }
-    
-    .productos{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 30%;
-    }
-    
-    h3{
-        font-family: 'Roboto', sans-serif;
-        font-size: 1.3rem;
-    }
-
-    .tituloSecundario{
-        font-family: 'Montserrat', sans-serif;
-        font-size: 1.7rem;
-        padding-bottom: 20px;
-        padding-top: 15px;
-    }
-    
-    .parrafo{
-        font-family: 'Roboto', sans-serif;
-        font-size: 1.3rem;
-        padding-left: 5px;
-    }
-    
-    .footer{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-    }
-
-    .footerDiv{
-        display: flex;
-        flex-direction: row;
-    }
-
-    .logoFooter{
-        width: 150px;
-    }
-
-    .footerRRSS{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        align-items: center;
-    }
-
-    .imgFooterRRSS{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        font-size: 200%;
-    }
-
-    .iconMediosDePago{
-        font-size: 200%;
-    }
-
-    .imgFooterMediosDePago{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        margin-top: 2%;
-        width: 60px;
-    }
-
-    .contacto{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        width: 100%;
-    }   
-
-    .footerContactanos{
-        display: flex;
-        flex-direction: column;
-        font-family: "Roboto", sans-serif;
-        font-size: 1.5rem;
-    }
-
-    .contactoParrafo{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-    }
-
-    .footerContacto{
-        font-size: 120%;
-        margin: 10px 10px;
-    }
-
-    .footerMapa{
-        margin: auto;
-    }
-}
-
-@media screen and (min-width: 1200px){
-    .header{
-        background-color: #ffffff;
-        font-style: normal;
-        font-family: 'Montserrat', sans-serif;
-        font-size: 1.5rem;;
-        display: flex;
-        justify-content: center;
-    }
-    
-    .navbar{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 100%;
-    }
-    
-    .menu {
-        display: flex;
-        flex-direction: row;
-        margin-right: 10px;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .menu li{
-        list-style-type: none;
-        display: flex;
-        justify-content: center;
-        padding: 7px;
-    }
-    
-    .menu li a{
-        text-decoration: none;
-        color: black;
-        display: flex;
-    }
-    
-    .logoHeader {
-        width: 250px;
-        height: 8vh;
-    }
-
-    .margins{
-        margin-left: auto;
-        margin-right: auto;
     }
 
     .hvr-grow {
@@ -504,51 +321,47 @@ footer{
         right: 0;
     }
 
-    .imgPrincipal{
-        background-color: #ffffff;
-    }
-
-    .imgPrincipalMedidas{
-        width: 90%;
+    .carouselTablet{
+        width: 100%;
         height: 40vh;
     }
 
-    .tituloPrincipal{
-        text-align: center;
-        font-family: 'Secular One', sans-serif;
-        background-color: white;
-        padding: 5px;
+    .altura{
+        max-height: 40vh;
     }
 
-    .jjjj{
-        font-size: 6rem;
-    }
-
-    .productos{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 30%;
+    .titulo{
+        font-size: 3.3rem;
     }
 
     .imgProductosMedidas{
-        display: flex;
-        width: 65%;
-        padding: 7px;
+        width: 80%;
     }
-
-    .imgProductosMedidas:hover{
-        transform: scale(1.3);
+    
+    .productos{
+        width: 30%;
     }
-
+    
     h3{
-        font-family: 'Roboto', sans-serif;
+        font-family: 'Mouse Memoirs', sans-serif;
         font-size: 1.7rem;
+    }
+
+    .tituloSecundario{
+        font-size: 2.5rem;
+    }
+    
+    .parrafo{
+        font-size: 1.8rem;
+    }
+
+    .formulario{
+        font-size: 1.9rem;
     }
 
     .button{
         cursor: pointer;
+        color: black;
     }
 
     .hvr-shutter-in-horizontal {
@@ -558,7 +371,7 @@ footer{
         transform: perspective(1px) translateZ(0);
         box-shadow: 0 0 1px rgba(0, 0, 0, 0);
         position: relative;
-        background: #8ad8f0;
+        background: #B40000;
         -webkit-transition-property: color;
         transition-property: color;
         -webkit-transition-duration: 0.3s;
@@ -594,6 +407,108 @@ footer{
 
     .footer{
         display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .footerDiv{
+        display: flex;
+        flex-direction: row;
+        margin-top: 10px;
+    }
+
+    .logoFooter{
+        width: 150px;
+    }
+
+    .imgFooterRRSS{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        font-size: 200%;
+    }
+
+    .iconMediosDePago{
+        font-size: 200%;
+    }
+
+    .imgFooterMediosDePago{
+        width: 60px;
+    }  
+
+    .footerContactanos{
+        font-size: 1.9rem;
+    }
+
+    .footerContacto{
+        font-size: 120%;
+        margin: 10px 10px;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .header{
+        font-size: 2.5rem;
+    }
+    
+    .navbar{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+
+    ul li {
+        padding: 0px 5px;
+    }
+    
+    .logoHeader {
+        width: 250px;
+        height: 8vh;
+    }
+
+    .searchDesktop{
+        width: 20%;
+    }
+
+    .titulo{
+        font-size: 4rem;
+    }
+
+    .dropdown{
+        display: none;
+    }
+
+    .productos{
+        width: 30%;
+    }
+
+    .imgProductosMedidas{
+        width: 65%;
+    }
+
+    .imgProductosMedidas:hover{
+        transform: scale(1.3);
+    }
+
+    h3{
+        font-size: 2.2rem;
+    }
+
+    .formulario{
+        justify-content: center;
+        width: 65%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .button{
+        cursor: pointer;
+        color: black;
+    }
+
+    .footer{
+        display: flex;
         flex-direction: row;
         width: 100%;
     }
@@ -608,15 +523,20 @@ footer{
 
     .footerLogo{
         width: 30%;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
     }
 
+    .footerLogo a{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
     .footerRRSS{
         width: 40%;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
     }
 
     .footerMediosDePago{
