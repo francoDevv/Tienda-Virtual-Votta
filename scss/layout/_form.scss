@@ -1,0 +1,20 @@
+.formulario{
+    font-family: $paragraph-font;
+    font-size: 1.3rem;
+    padding: 10px;
+    display: $flex;
+    flex-direction: column;
+    width: 100%;
+    .col-ancho{
+        width: 45%;
+    }
+    .inputEmail{
+        margin-top: 10px;
+    }
+    .button{
+        padding: 8px 0px;
+        background-color: $tertiary-color;
+        color: $main-color;
+        border: 0.5px solid black;
+    }
+}

@@ -1,0 +1,87 @@
+.footer{
+    background-color: $secondary-color;
+    margin-top: 10px;
+    a {
+        display: $flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .footerDiv{
+        .footerLogo{
+            padding-top: 20px;
+            .logoFooter{
+                width: 30%;
+                display: $flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+        .footerRRSS{
+            display: $flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+            width: 100%;
+            padding-top: 40px;
+            .footerRedes{
+                text-decoration: none;
+                width: 25%;
+            }
+            .imgFooterRRSS{
+                display: $flex;
+                flex-direction: row;
+                align-items: center;
+                font-size: 100%;
+                color: $main-color;
+            }
+        }
+        .footerMediosDePago{
+            display: $flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+            width: 100%;
+            .iconMediosDePago{
+                font-size: 100%;
+                margin-top: 2%;
+                color: $main-color;
+            }
+            .imgFooterMediosDePago{
+                display: $flex;
+                flex-direction: row;
+                align-items: center;
+                margin-top: 2%;
+                width: 30px;
+            }
+        }
+    }
+    .footerDivCont{
+        .contacto{
+            display: $flex;
+            flex-direction: row;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            width: 100%;
+            .footerContactanos{
+                display: $flex;
+                flex-direction: column;
+                font-family: $paragraph-font;
+                font-size: 1.4rem;
+                .contactoParrafo{
+                    display: $flex;
+                    flex-direction: row;
+                    align-items: center;
+                    color: $main-color;
+                }
+                .footerContacto{
+                    font-size: 100%;
+                    margin: 8px 5px;
+                }
+            }
+            .footerMapa{
+                margin: auto;
+            }
+        }
+    }
+}

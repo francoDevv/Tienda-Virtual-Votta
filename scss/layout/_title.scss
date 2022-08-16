@@ -1,0 +1,20 @@
+.tituloPrincipal{
+    font-family: $title-font;
+    background-color: $tertiary-color;
+    padding: 5px;
+    display: $flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    .titulo{
+        font-size: 1.8rem;
+        color: $main-color;
+        text-align: center;
+        padding-top: 5px;
+    }
+}
+
+h3{
+    font-family: $paragraph-font;
+    font-size: 1.3rem;
+}
