@@ -28,12 +28,24 @@
                 text-decoration: none;
                 width: 25%;
             }
-            .imgFooterRRSS{
+            .iconWhatsapp{
                 display: $flex;
                 flex-direction: row;
                 align-items: center;
                 font-size: 100%;
-                color: $main-color;
+                color: map-get($redes, whatsapp);
+            }
+            .iconInstagram{
+                @extend .iconWhatsapp;
+                color: map-get($redes, instagram);
+            }
+            .iconFacebook{
+                @extend .iconWhatsapp;
+                color: map-get($redes, facebook);
+            }
+            .iconTiktok{
+                @extend .iconWhatsapp;
+                color: map-get($redes, tiktok);
             }
         }
         .footerMediosDePago{
