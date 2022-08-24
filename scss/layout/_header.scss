@@ -4,12 +4,9 @@
     font-style: normal;
     font-family: $paragraph-font;
     font-size: 1.2rem;
-    display: $flex;
-    justify-content: space-between;
+    @include flex-direction-justify (row, space-between);
     .navbar{
-        display: $flex;
-        justify-content: space-between;
-        align-items: center;
+        @include flex-direction-justify-align (row, space-between, center);
         width: 100%;
         .logoHeader{
             width: 200px;

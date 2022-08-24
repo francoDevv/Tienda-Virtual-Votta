@@ -2,10 +2,8 @@
     font-family: $title-font;
     background-color: $tertiary-color;
     padding: 5px;
-    display: $flex;
-    justify-content: center;
+    @include flex-direction-justify-align (row, center, center);
     text-align: center;
-    align-items: center;
     .titulo{
         font-size: 1.8rem;
         color: $main-color;

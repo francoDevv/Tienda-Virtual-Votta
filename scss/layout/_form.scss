@@ -2,8 +2,7 @@
     font-family: $paragraph-font;
     font-size: 1.3rem;
     padding: 10px;
-    display: $flex;
-    flex-direction: column;
+    @include flex-direction (column);
     width: 100%;
     .col-ancho{
         width: 45%;

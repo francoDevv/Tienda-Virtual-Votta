@@ -1,12 +1,9 @@
 @media screen and (min-width: 768px){
     .header{
         font-size: 1.7rem;
-        display: $flex;
-        justify-content: center;
+        @include flex-direction-justify (row, center);
         .navbar{
-            display: $flex;
-            justify-content: space-between;
-            align-items: center;
+            @include flex-direction-justify-align (row, space-between, center);
             width: 100%;
             .logoHeader{
                 width: 200px;
@@ -131,12 +128,9 @@
         }
     }
     .footer{
-        display: $flex;
-        flex-direction: column;
-        justify-content: space-evenly;
+        @include flex-direction-justify (column, space-evenly);
         .footerDiv{
-            display: $flex;
-            flex-direction: row;
+            @include flex-direction (row);
             margin-top: 10px;
             .footerLogo{
                 .logoFooter{
@@ -144,11 +138,19 @@
                 }
             }
             .footerRRSS{
-                .imgFooterRRSS{
-                    display: $flex;
-                    flex-direction: row;
-                    align-items: center;
-                    font-size: 200%;
+                .footerRedes{
+                    .iconWhatsapp{ 
+                        font-size: 200%;
+                    }
+                    .iconInstagram{
+                        font-size: 200%;
+                    }
+                    .iconFacebook{
+                        font-size: 200%;
+                    }
+                    .iconTiktok{
+                        font-size: 200%;
+                    }
                 }
             }
             .footerMediosDePago{
