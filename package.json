@@ -1,7 +1,7 @@
 {
   "name": "tienda-virtual-votta",
   "version": "1.0.0",
-  "description": "",
+  "description": "sitio web de una tienda de ropa",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

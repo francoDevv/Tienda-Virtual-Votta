@@ -52,7 +52,7 @@
                                 </li>
                             </ul>
                             <form class="d-flex searchDesktop">
-                                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                                <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
                             </form>
                         </div>
                     </div>
@@ -67,7 +67,7 @@
                         <h1 class="titulo">CONTACTO</h1>
                     </div>
                 </section>
-                <section>
+                <section class="container-xl">
                     <form action="" class="formulario">
                         <div class="d-flex justify-content-between">
                             <div class="col-ancho">
@@ -88,7 +88,24 @@
                             <textarea class="form-control" id="exampleFormControlTextarea1" cols="30" rows="10" placeholder="Escribe aquí tu consulta ..." required></textarea>
                         </div>
                         <div class="formulario">    
-                            <input type="submit" class="rounded-pill button hvr-shutter-in-horizontal" value="ENVIAR">
+                            <input type="submit" class="rounded-pill button hvr-shutter-in-horizontal" value="ENVIAR" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">CAMPOS INCOMPLETOS</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            Debes completar todos los campos requeridos en el formulario.
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                                            <button type="button" class="btn buttonAlert" data-bs-dismiss="modal">De acuerdo</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </form>
                 </section>
