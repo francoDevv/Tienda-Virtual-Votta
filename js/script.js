@@ -1,56 +1,87 @@
 let saved_answer = "si"
+let user_answer = prompt("¿Deseas navegar en el sitio web Tienda Capricho Oficial? \nEscribe si para continuar");
 
-function shop() {
-    let query = false;
-    for (let i = 0; i >= 0; i--) {
-        let user_answer = prompt("¿Deseas navegar en el sitio web Tienda Capricho Oficial? \nEscribe si para continuar");
-        if (user_answer === saved_answer) {
-            alert("Bienvenido/a esperamos que encuentres lo que estas buscando, gracias por confiar en nosotros");
-            query = true;
-            break;
-        } else {
-            alert("Nos veremos la proxima")
-        }
-    }
-    return query;
-}
-
-if (shop()) {
-    let options = prompt("Elegi la opción que quieras realizar. \n1 - Consultar los nuevos ingresos. \n2 - Consultar el stock de niños. \n3 - Consultar el stock de hombres. \n4 - Consultar el stock de mujeres. \n5 - Obtener informacion acerca de nosotros. \n6 - Realizar una consulta a través de nuestro formulario de contacto. \nEscribe ESC para salir.");
-    while (options != "ESC" && options != "esc") {
-        switch (options) {
-            case "1":
-                alert("Para ver los nuevos ingresos, debes dirigerte a la página de inicio y allí encontrarás lo ultimo que ingreso.");
-                break;
-
-            case "2":
-                alert("Para consultar el stock de la indumentaria de niños, dirigete a la sección de ninños.");
-                break;
-
-            case "3":
-                alert("Para consultar el stock de la indumentaria de hombres, dirigete a la sección de hombres.");
-                break;
-
-            case "4":
-                alert("Para consultar el stock de la indumentaria de mujeres, dirigete a la sección de mujeres.");            
-                break;
-
-            case "5":
-                alert("Para obtener informacion acerca de nosotros, dirigete a la sección de Más Info.");
-                break;
-
-            case "6":
-                alert("Para realizarnos una consulta, dirigete a la sección de contacto.");
-                break;
-
-            default:
-                alert("Opción invalida, por favor reintente otra vez");
-                break;
-        }
-        options = prompt("Elegi la opción que quieras realizar. \n1 - Consultar los nuevos ingresos. \n2 - Consultar el stock de niños. \n3 - Consultar el stock de hombres. \n4 - Consultar el stock de mujeres. \n5 - Obtener informacion acerca de nosotros. \n6 - Realizar una consulta a través de nuestro formulario de contacto. \nEscribe ESC para salir.");
-    }
+if (user_answer === saved_answer) {
+    alert("Bienvenido/a esperamos que encuentres lo que estas buscando, gracias por confiar en nosotros");
 } else {
-    alert("Esperamos que vuelvas pronto");
+        alert("Nos veremos la proxima")
 }
+
+class Product {
+    constructor(name, gender, color, size, price, payment_methods, id){
+        this.name = name;
+        this.gender = gender;
+        this.color = color;
+        this.size = size;
+        this.price = parseInt(price);
+        this.payment_methods = payment_methods;
+        this.id = id;
+    }
+    giveId(array){
+        this.id = array.length;
+    }
+}
+
+const products = [
+    new Product("Jean", "Men", "Blue", "S - M - L - XL - XXl", 1000, "All payments methods", 1),
+    new Product("Poulover", "Women", "Blue and grey / Brown", "S - M - L - XL - XXl", 100, "All payments methods", 2),
+    new Product("Hoodie", "Men", "Beige / LigthBlue", "S - M - L - XL - XXl", 1300, "All payments methods", 3),
+    new Product("Denim Jacket", "Women", "LigthBlue", "S - M - L - XL - XXl", 900, "All payments methods", 4),
+    new Product("Sweater", "Boys", "Moss Green", "4, 6, 8, 10, 12, 14, 16", 1970, "All payments methods", 5),
+    new Product("Pijama", "Unisex", "Cocodrile / Walrus", "4, 6, 8, 10, 12, 14, 16", 300, "All payments methods", 6),
+]
+
+alert("Estos son los productos que tenemos en stock:\n" + JSON.stringify(products, null ,4));
+
+let next = true;
+
+while (next) {
+    let add = prompt("Te gustaria que agregaramos un producto? Si es así, deja aquí lo siguientes datos (separados con un guion -): name - gender - color - size - price - payments methods. Ingresa la palabra NO para finalizar");
+    if (add.toUpperCase() == "NO") {
+        next = false;
+        break;
+    }
+
+    let added_products = add.split("-");
+    console.log(added_products);
+    const user_products = new Product(added_products[0], added_products[1], added_products[2], added_products[3], added_products[4], added_products[5]);
+    products.push(user_products);
+    user_products.giveId(products);
+    console.log(products);
+}
+
+let organize = prompt("Elegi la forma de ordenar los productos \n1) Nombre (A - Z) \n2) Nombre (Z - A) \n3) Precio ascendente \n4) Precio Descendente");
+
+function ordenar(organize, array) {
+    let ordenado = array.slice(0);
+
+    switch (organize) {
+        case "1":
+            let nombre_ascendente = ordenado.sort((a,b)=>a.name.localeCompare(b.name));
+            return nombre_ascendente;
+        case "2":
+            let nombre_descendente = ordenado.sort((a,b)=>b.name.localeCompare(a.name));
+            return nombre_descendente;
+        case "3":
+            return ordenado.sort((a,b)=>a.price- b.price);
+        case "4":
+            return ordenado.sort((a,b)=> b.price - a.price);
+        default:
+            alert("No es un criterio valido para ordenar")
+            break;
+    }
+}
+
+function string_result(array){
+    let info = "";
+
+    array.forEach(elemento=>{
+        info += "Nombre: " + elemento.name + "\nGenero: " + elemento.gender + "\nColor: " + elemento.color + "\nSize: " + elemento.size + "\nPrecio: " + elemento.price + "\nMetodos de Pago: " + elemento.payment_methods + "\n\n"
+    })
+
+    return info;
+}
+
+alert(string_result(ordenar(organize, products)));
 
 alert("Hasta luego");
