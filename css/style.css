@@ -1,8 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Mouse+Memoirs&family=Secular+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@0,300;1,300&family=Mouse+Memoirs&display=swap");
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; }
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
 
 .header {
   width: 100%;
@@ -10,429 +12,747 @@
   font-style: normal;
   font-family: "Mouse Memoirs", sans-serif;
   font-size: 1.2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between; }
-  .header .navbar {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%; }
-    .header .navbar .logoHeader {
-      width: 200px;
-      height: 8vh; }
-    .header .navbar .margins {
-      margin-left: auto;
-      margin-right: auto; }
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.header .navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+.header .navbar .logoHeader {
+  width: 200px;
+  height: 8vh;
+}
+.header .navbar .margins {
+  margin-left: auto;
+  margin-right: auto;
+}
 
 .tituloPrincipal {
   font-family: "Secular One", sans-serif;
   background-color: #B40000;
   padding: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  text-align: center; }
-  .tituloPrincipal .titulo {
-    font-size: 1.8rem;
-    color: white;
-    text-align: center;
-    padding-top: 5px; }
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+.tituloPrincipal .titulo {
+  font-size: 1.8rem;
+  color: white;
+  text-align: center;
+  padding-top: 5px;
+}
 
 h3 {
   font-family: "Mouse Memoirs", sans-serif;
-  font-size: 1.3rem; }
+  font-size: 1.3rem;
+}
+
+h5 {
+  font-family: "Fira Sans Condensed", sans-serif;
+  font-size: 1.4rem;
+}
 
 .footer {
   background-color: black;
-  margin-top: 10px; }
-  .footer a {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center; }
-  .footer .footerDiv .footerLogo {
-    padding-top: 20px; }
-    .footer .footerDiv .footerLogo .logoFooter {
-      width: 30%;
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center; }
-  .footer .footerDiv .footerRRSS {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 100%;
-    padding-top: 40px; }
-    .footer .footerDiv .footerRRSS .footerRedes {
-      text-decoration: none;
-      width: 25%; }
-      .footer .footerDiv .footerRRSS .footerRedes .iconWhatsapp, .footer .footerDiv .footerRRSS .footerRedes .iconInstagram, .footer .footerDiv .footerRRSS .footerRedes .iconFacebook, .footer .footerDiv .footerRRSS .footerRedes .iconTiktok {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        font-size: 100%;
-        color: #00bb2d; }
-      .footer .footerDiv .footerRRSS .footerRedes .iconInstagram {
-        color: #ff1493; }
-      .footer .footerDiv .footerRRSS .footerRedes .iconFacebook {
-        color: #1383eb; }
-      .footer .footerDiv .footerRRSS .footerRedes .iconTiktok {
-        color: white; }
-  .footer .footerDiv .footerMediosDePago {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 100%; }
-    .footer .footerDiv .footerMediosDePago .iconMediosDePago {
-      font-size: 100%;
-      margin-top: 2%;
-      color: white; }
-    .footer .footerDiv .footerMediosDePago .imgFooterMediosDePago {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      margin-top: 2%;
-      width: 30px; }
-  .footer .footerDivCont .contacto {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    width: 100%; }
-    .footer .footerDivCont .contacto .footerContactanos {
-      display: flex;
-      flex-direction: column;
-      font-family: "Mouse Memoirs", sans-serif;
-      font-size: 1.4rem; }
-      .footer .footerDivCont .contacto .footerContactanos .contactoParrafo {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        color: white; }
-      .footer .footerDivCont .contacto .footerContactanos .footerContacto {
-        font-size: 100%;
-        margin: 8px 5px; }
-    .footer .footerDivCont .contacto .footerMapa {
-      margin: auto; }
+  margin-top: 10px;
+}
+.footer a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.footer .footerDiv .footerLogo {
+  padding-top: 20px;
+}
+.footer .footerDiv .footerLogo .logoFooter {
+  width: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.footer .footerDiv .footerRRSS {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  padding-top: 40px;
+}
+.footer .footerDiv .footerRRSS .footerRedes {
+  text-decoration: none;
+  width: 25%;
+}
+.footer .footerDiv .footerRRSS .footerRedes .iconWhatsapp, .footer .footerDiv .footerRRSS .footerRedes .iconTiktok, .footer .footerDiv .footerRRSS .footerRedes .iconFacebook, .footer .footerDiv .footerRRSS .footerRedes .iconInstagram {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 100%;
+  color: #00bb2d;
+}
+.footer .footerDiv .footerRRSS .footerRedes .iconInstagram {
+  color: #ff1493;
+}
+.footer .footerDiv .footerRRSS .footerRedes .iconFacebook {
+  color: #1383eb;
+}
+.footer .footerDiv .footerRRSS .footerRedes .iconTiktok {
+  color: white;
+}
+.footer .footerDiv .footerMediosDePago {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+.footer .footerDiv .footerMediosDePago .iconMediosDePago {
+  font-size: 100%;
+  margin-top: 2%;
+  color: white;
+}
+.footer .footerDiv .footerMediosDePago .imgFooterMediosDePago {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 2%;
+  width: 30px;
+}
+.footer .footerDivCont .contacto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+}
+.footer .footerDivCont .contacto .footerContactanos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: "Mouse Memoirs", sans-serif;
+  font-size: 1.4rem;
+}
+.footer .footerDivCont .contacto .footerContactanos .contactoParrafo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+}
+.footer .footerDivCont .contacto .footerContactanos .footerContacto {
+  font-size: 100%;
+  margin: 8px 5px;
+}
+.footer .footerDivCont .contacto .footerMapa {
+  margin: auto;
+}
 
 .formulario {
   font-family: "Mouse Memoirs", sans-serif;
   font-size: 1.3rem;
   padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  width: 100%; }
-  .formulario .col-ancho {
-    width: 45%; }
-  .formulario .inputEmail {
-    margin-top: 10px; }
-  .formulario .button {
-    padding: 8px 0px;
-    background-color: #B40000;
-    color: white;
-    border: 0.5px solid black; }
-  .formulario .buttonAlert {
-    background-color: #B40000;
-    color: white; }
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+.formulario .col-ancho {
+  width: 45%;
+}
+.formulario .inputEmail {
+  margin-top: 10px;
+}
+.formulario .button {
+  padding: 8px 0px;
+  background-color: #B40000;
+  color: white;
+  border: 0.5px solid black;
+}
+.formulario .buttonAlert {
+  background-color: #B40000;
+  color: white;
+}
 
 .imgProductos {
   background-color: whitesmoke;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap; }
-  .imgProductos .productos {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 40%; }
-    .imgProductos .productos .imgProductosMedidas {
-      display: flex;
-      width: 100%;
-      padding: 7px; }
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.imgProductos .card_fuente {
+  font-style: italic;
+}
+.imgProductos .colorButton {
+  background-color: #B40000;
+  color: white;
+  border: 0.5px solid black;
+}
 
 .imgProductos {
   background-color: whitesmoke;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap; }
-  .imgProductos .productos {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 40%; }
-    .imgProductos .productos .imgProductosMedidas {
-      display: flex;
-      width: 100%;
-      padding: 7px; }
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.imgProductos .card {
+  margin-top: 15px;
+}
 
 .imgProductos {
   background-color: whitesmoke;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap; }
-  .imgProductos .productos {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 40%; }
-    .imgProductos .productos .imgProductosMedidas {
-      display: flex;
-      width: 100%;
-      padding: 7px; }
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.imgProductos .productos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 40%;
+}
+.imgProductos .productos .imgProductosMedidas {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  padding: 7px;
+}
 
 .imgProductos {
   background-color: whitesmoke;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap; }
-  .imgProductos .productos {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 40%; }
-    .imgProductos .productos .imgProductosMedidas {
-      display: flex;
-      width: 100%;
-      padding: 7px; }
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.imgProductos .productos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 40%;
+}
+.imgProductos .productos .imgProductosMedidas {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  padding: 7px;
+}
 
 .tituloSecundario {
   font-family: "Mouse Memoirs", sans-serif;
   font-size: 2rem;
   padding-bottom: 20px;
-  padding-top: 15px; }
+  padding-top: 15px;
+}
 
 .parrafo {
   font-family: "Mouse Memoirs", sans-serif;
   font-size: 1.3rem;
   padding-left: 5px;
-  padding-right: 5px; }
+  padding-right: 5px;
+}
 
 @media screen and (min-width: 768px) {
   .header {
     font-size: 1.7rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
-    justify-content: center; }
-    .header .navbar {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: center;
-      width: 100%; }
-      .header .navbar .logoHeader {
-        width: 200px;
-        height: 5vh; }
-      .header .navbar .hvr-grow {
-        display: inline-block;
-        vertical-align: middle;
-        -webkit-transform: perspective(1px) translateZ(0);
-        transform: perspective(1px) translateZ(0);
-        box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-        -webkit-transition-duration: 0.3s;
-        transition-duration: 0.3s;
-        -webkit-transition-property: transform;
-        transition-property: transform; }
-      .header .navbar .hvr-grow:hover, .header .navbar .hvr-grow:focus, .header .navbar .hvr-grow:active {
-        -webkit-transform: scale(1.1);
-        transform: scale(1.1); }
-      .header .navbar .hvr-underline-from-left {
-        display: inline-block;
-        vertical-align: middle;
-        -webkit-transform: perspective(1px) translateZ(0);
-        transform: perspective(1px) translateZ(0);
-        box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-        position: relative;
-        overflow: hidden; }
-      .header .navbar .hvr-underline-from-left:before {
-        content: "";
-        position: absolute;
-        z-index: -1;
-        left: 0;
-        right: 100%;
-        bottom: 0;
-        background: rgba(0, 0, 0, 0.953);
-        height: 4px;
-        -webkit-transition-property: right;
-        transition-property: right;
-        -webkit-transition-duration: 0.3s;
-        transition-duration: 0.3s;
-        -webkit-transition-timing-function: ease-out;
-        transition-timing-function: ease-out; }
-      .header .navbar .hvr-underline-from-left:hover:before, .header .navbar .hvr-underline-from-left:focus:before, .header .navbar .hvr-underline-from-left:active:before {
-        right: 0; }
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .header .navbar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+  }
+  .header .navbar .logoHeader {
+    width: 200px;
+    height: 5vh;
+  }
+  .header .navbar .hvr-grow {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+            box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    -webkit-transition-property: -webkit-transform;
+    transition-property: -webkit-transform;
+    transition-property: transform;
+    transition-property: transform, -webkit-transform;
+  }
+  .header .navbar .hvr-grow:hover, .header .navbar .hvr-grow:focus, .header .navbar .hvr-grow:active {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  .header .navbar .hvr-underline-from-left {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+            box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    overflow: hidden;
+  }
+  .header .navbar .hvr-underline-from-left:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    right: 100%;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.953);
+    height: 4px;
+    -webkit-transition-property: right;
+    transition-property: right;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+  }
+  .header .navbar .hvr-underline-from-left:hover:before, .header .navbar .hvr-underline-from-left:focus:before, .header .navbar .hvr-underline-from-left:active:before {
+    right: 0;
+  }
   .carouselTablet {
     width: 100%;
-    height: 40vh; }
-    .carouselTablet .altura {
-      max-height: 40vh; }
+    height: 40vh;
+  }
+  .carouselTablet .altura {
+    max-height: 40vh;
+  }
   .titulo {
-    font-size: 3.3rem; }
-  .imgProductos .productos {
-    width: 30%; }
-    .imgProductos .productos .imgProductosMedidas {
-      width: 80%; }
-  h3 {
-    font-family: "Mouse Memoirs", sans-serif;
-    font-size: 1.7rem; }
-  .tituloSecundario {
-    font-size: 2.5rem; }
-  .formulario {
-    font-size: 1.9rem; }
-    .formulario .button {
-      cursor: pointer;
-      color: black; }
-    .formulario .hvr-shutter-in-horizontal {
-      display: inline-block;
-      vertical-align: middle;
-      -webkit-transform: perspective(1px) translateZ(0);
-      transform: perspective(1px) translateZ(0);
-      box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-      position: relative;
-      background: #B40000;
-      -webkit-transition-property: color;
-      transition-property: color;
-      -webkit-transition-duration: 0.3s;
-      transition-duration: 0.3s; }
-    .formulario .hvr-shutter-in-horizontal:before {
-      content: "";
-      position: absolute;
-      z-index: -1;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      background: #e1e1e1;
-      -webkit-transform: scaleX(1);
-      transform: scaleX(1);
-      -webkit-transform-origin: 50%;
-      transform-origin: 50%;
-      -webkit-transition-property: transform;
-      transition-property: transform;
-      -webkit-transition-duration: 0.3s;
-      transition-duration: 0.3s;
-      -webkit-transition-timing-function: ease-out;
-      transition-timing-function: ease-out; }
-    .formulario .hvr-shutter-in-horizontal:hover, .formulario .hvr-shutter-in-horizontal:focus, .formulario .hvr-shutter-in-horizontal:active {
-      color: white; }
-    .formulario .hvr-shutter-in-horizontal:hover:before, .formulario .hvr-shutter-in-horizontal:focus:before, .formulario .hvr-shutter-in-horizontal:active:before {
-      -webkit-transform: scaleX(0);
-      transform: scaleX(0); }
-  .footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly; }
-    .footer .footerDiv {
-      display: flex;
-      flex-direction: row;
-      margin-top: 10px; }
-      .footer .footerDiv .footerLogo .logoFooter {
-        width: 150px; }
-      .footer .footerDiv .footerRRSS .footerRedes .iconWhatsapp, .footer .footerDiv .footerRRSS .footerRedes .iconInstagram, .footer .footerDiv .footerRRSS .footerRedes .iconFacebook, .footer .footerDiv .footerRRSS .footerRedes .iconTiktok {
-        font-size: 200%; }
-      .footer .footerDiv .footerRRSS .footerRedes .iconInstagram {
-        font-size: 200%; }
-      .footer .footerDiv .footerRRSS .footerRedes .iconFacebook {
-        font-size: 200%; }
-      .footer .footerDiv .footerRRSS .footerRedes .iconTiktok {
-        font-size: 200%; }
-      .footer .footerDiv .footerMediosDePago .iconMediosDePago {
-        font-size: 200%; }
-      .footer .footerDiv .footerMediosDePago .imgFooterMediosDePago {
-        width: 60px; }
-    .footer .footerDivCont .contacto .footerContactanos {
-      font-size: 1.9rem; }
-      .footer .footerDivCont .contacto .footerContactanos .footerContacto {
-        font-size: 120%;
-        margin: 10px 10px; } }
-
-@media screen and (min-width: 1200px) {
-  .header {
-    font-size: 2.5rem; }
-    .header .navbar {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center;
-      width: 100%; }
-      .header .navbar li {
-        padding: 0px 5px; }
-      .header .navbar .logoHeader {
-        width: 250px;
-        height: 8vh; }
-  .searchDesktop {
-    width: 20%; }
-  .tituloPrincipal .titulo {
-    font-size: 4rem; }
-  .dropdown {
-    display: none; }
+    font-size: 3.3rem;
+  }
   .imgProductos .productos {
     width: 30%;
-    overflow: hidden; }
-    .imgProductos .productos .imgProductosMedidas {
-      width: 65%;
-      transition: 0.5s;
-      object-fit: cover;
-      margin: 20px; }
-      .imgProductos .productos .imgProductosMedidas:hover {
-        transform: scale(1.2); }
+  }
+  .imgProductos .productos .imgProductosMedidas {
+    width: 80%;
+  }
   h3 {
-    font-size: 2.2rem; }
+    font-family: "Mouse Memoirs", sans-serif;
+    font-size: 1.7rem;
+  }
+  .tituloSecundario {
+    font-size: 2.5rem;
+  }
   .formulario {
-    justify-content: center;
+    font-size: 1.9rem;
+  }
+  .formulario .button {
+    cursor: pointer;
+    color: black;
+  }
+  .formulario .hvr-shutter-in-horizontal {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+            box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    background: #B40000;
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+  }
+  .formulario .hvr-shutter-in-horizontal:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #e1e1e1;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+    -webkit-transform-origin: 50%;
+    transform-origin: 50%;
+    -webkit-transition-property: transform;
+    -webkit-transition-property: -webkit-transform;
+    transition-property: -webkit-transform;
+    transition-property: transform;
+    transition-property: transform, -webkit-transform;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+  }
+  .formulario .hvr-shutter-in-horizontal:hover, .formulario .hvr-shutter-in-horizontal:focus, .formulario .hvr-shutter-in-horizontal:active {
+    color: white;
+  }
+  .formulario .hvr-shutter-in-horizontal:hover:before, .formulario .hvr-shutter-in-horizontal:focus:before, .formulario .hvr-shutter-in-horizontal:active:before {
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+  }
+  .footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .footer .footerDiv {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin-top: 10px;
+  }
+  .footer .footerDiv .footerLogo .logoFooter {
+    width: 150px;
+  }
+  .footer .footerDiv .footerRRSS .footerRedes .iconWhatsapp, .footer .footerDiv .footerRRSS .footerRedes .iconInstagram, .footer .footerDiv .footerRRSS .footerRedes .iconFacebook, .footer .footerDiv .footerRRSS .footerRedes .iconTiktok {
+    font-size: 200%;
+  }
+  .footer .footerDiv .footerRRSS .footerRedes .iconInstagram {
+    font-size: 200%;
+  }
+  .footer .footerDiv .footerRRSS .footerRedes .iconFacebook {
+    font-size: 200%;
+  }
+  .footer .footerDiv .footerRRSS .footerRedes .iconTiktok {
+    font-size: 200%;
+  }
+  .footer .footerDiv .footerMediosDePago .iconMediosDePago {
+    font-size: 200%;
+  }
+  .footer .footerDiv .footerMediosDePago .imgFooterMediosDePago {
+    width: 60px;
+  }
+  .footer .footerDivCont .contacto .footerContactanos {
+    font-size: 1.9rem;
+  }
+  .footer .footerDivCont .contacto .footerContactanos .footerContacto {
+    font-size: 120%;
+    margin: 10px 10px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header {
+    font-size: 2.5rem;
+  }
+  .header .navbar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+  }
+  .header .navbar li {
+    padding: 0px 5px;
+  }
+  .header .navbar .logoHeader {
+    width: 250px;
+    height: 8vh;
+  }
+  .searchDesktop {
+    width: 20%;
+  }
+  .tituloPrincipal .titulo {
+    font-size: 4rem;
+  }
+  .dropdown {
+    display: none;
+  }
+  .imgProductos .productos {
+    width: 30%;
+    overflow: hidden;
+  }
+  .imgProductos .productos .imgProductosMedidas {
+    width: 100%;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    -o-object-fit: cover;
+       object-fit: cover;
+    margin: 20px;
+  }
+  .imgProductos .productos .imgProductosMedidas:hover {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  h3 {
+    font-size: 2.2rem;
+  }
+  .formulario {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     width: 65%;
     margin-left: auto;
-    margin-right: auto; }
-    .formulario .button {
-      cursor: pointer;
-      color: black; }
+    margin-right: auto;
+  }
+  .formulario .button {
+    cursor: pointer;
+    color: black;
+  }
   .footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
-    width: 100%; }
-    .footer .footerDiv {
-      width: 50%; }
-      .footer .footerDiv .footerLogo {
-        width: 30%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center; }
-        .footer .footerDiv .footerLogo a {
-          display: flex;
-          flex-direction: row;
-          justify-content: center;
-          align-items: center;
-          text-align: center; }
-      .footer .footerDiv .footerRRSS {
-        width: 40%; }
-        .footer .footerDiv .footerRRSS .footerRRSS .footerRedes .iconWhatsapp, .footer .footerDiv .footerRRSS .footerRRSS .footerRedes .iconInstagram, .footer .footerDiv .footerRRSS .footerRRSS .footerRedes .iconFacebook, .footer .footerDiv .footerRRSS .footerRRSS .footerRedes .iconTiktok {
-          font-size: 200%; }
-        .footer .footerDiv .footerRRSS .footerRRSS .footerRedes .iconInstagram {
-          font-size: 200%; }
-        .footer .footerDiv .footerRRSS .footerRRSS .footerRedes .iconFacebook {
-          font-size: 200%; }
-        .footer .footerDiv .footerRRSS .footerRRSS .footerRedes .iconTiktok {
-          font-size: 200%; }
-      .footer .footerDiv .footerMediosDePago {
-        width: 10%;
-        display: flex;
-        flex-direction: column; }
-    .footer .footerDivCont {
-      width: 50%; }
-      .footer .footerDivCont .contacto .footerContactanos {
-        width: 50%;
-        padding: 10px;
-        justify-content: center; }
-      .footer .footerDivCont .contacto .footerMapa {
-        width: 50%;
-        padding-top: 10px; } }
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 100%;
+  }
+  .footer .footerDiv {
+    width: 50%;
+  }
+  .footer .footerDiv .footerLogo {
+    width: 30%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .footer .footerDiv .footerLogo a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  .footer .footerDiv .footerRRSS {
+    width: 40%;
+  }
+  .footer .footerDiv .footerRRSS .footerRRSS .footerRedes .iconWhatsapp, .footer .footerDiv .footerRRSS .footerRRSS .footerRedes .iconInstagram, .footer .footerDiv .footerRRSS .footerRRSS .footerRedes .iconFacebook, .footer .footerDiv .footerRRSS .footerRRSS .footerRedes .iconTiktok {
+    font-size: 200%;
+  }
+  .footer .footerDiv .footerRRSS .footerRRSS .footerRedes .iconInstagram {
+    font-size: 200%;
+  }
+  .footer .footerDiv .footerRRSS .footerRRSS .footerRedes .iconFacebook {
+    font-size: 200%;
+  }
+  .footer .footerDiv .footerRRSS .footerRRSS .footerRedes .iconTiktok {
+    font-size: 200%;
+  }
+  .footer .footerDiv .footerMediosDePago {
+    width: 10%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footer .footerDivCont {
+    width: 50%;
+  }
+  .footer .footerDivCont .contacto .footerContactanos {
+    width: 50%;
+    padding: 10px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .footer .footerDivCont .contacto .footerMapa {
+    width: 50%;
+    padding-top: 10px;
+  }
+}/*# sourceMappingURL=style.css.map */

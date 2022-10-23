@@ -3,16 +3,7 @@
     display: $flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    .productos{
-        display: $flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 40%;
-        .imgProductosMedidas{
-            display: $flex;
-            width: 100%;
-            padding: 7px;
-        }
+    .card{
+        margin-top: 15px;
     }
 }
