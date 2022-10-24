@@ -86,17 +86,43 @@
 
 // alert("Hasta luego");
 
-const contenedorProductos = getElemementById("container-productos")
+const contenedorProductos=document.getElementById("contenedor-productos")
 
-stockPoductos.forEach((productos) => {
-    const contenedor = document.createElement("div")
-    div.classList.add("productos")
-    div.innerHTML = 
-        `<img src=${productos.img} alt="buzo crema">
-                <h5 class="card-title">${productos.nombre}</h5>
-                <h5 class="card-title">${productos.precio}</h5>
-                <p class="card-text card_fuente">${productos.desc}</p>
-                <p> Talle : ${productos.talle}<p>
-                <a href="#" id=agregar${productos.id} class="btn colorButton" >Agregar al carrito</a>`
+stockProductos.forEach((producto) => {
+    const div = document.createElement("div")
+    // div.classList.add("producto")
+    div.innerHTML = `
+    <div class="card text-center" style="width: 18rem;">
+        <img src="./assets/images/jeans.jpg" class="card-img-top" alt="imagen de jean" loading="lazy">
+        <div class="card-body">
+            <h5 class="card-title">Jean de Hombre Rústico Azul  </h5>
+            <h5 class="card-title">$1000</h5>
+            <p class="card-text card_fuente">With</p>
+            <a href="#" class="btn colorButton">Agregar al carrito</a>
+        </div>
+    </div>
+    `
     contenedorProductos.appendChild(div)
 });
+
+                    {/* <img src=${producto.img} alt="buzo crema">
+    <h5 class="card-title">${producto.nombre}</h5>
+    <h5 class="card-title">${producto.precio}</h5>
+    <p class="card-text card_fuente">${producto.desc}</p>
+    <p>Talle : ${producto.talle}<p>
+    <a href="#" id=agregar${producto.id} class="btn colorButton" >Agregar al carrito</a> */}
+
+// stockProductos.forEach((producto) => {
+//     const div = document.createElement('div')
+//     div.classList.add('producto')
+//     div.innerHTML = `
+//     <img src=${producto.img} alt= "">
+//     <h3>${producto.nombre}</h3>
+//     <p>${producto.desc}</p>
+//     <p>Talle: ${producto.talle}</p>
+//     <p class="precioProducto">Precio:$ ${producto.precio}</p>
+//     <button id="agregar${producto.id}" class="boton-agregar">Agregar <i class="fas fa-shopping-cart"></i></button>
+
+//     `
+//     contenedorProductos.appendChild(div)
+// });
