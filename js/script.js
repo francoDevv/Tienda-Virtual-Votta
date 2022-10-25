@@ -1,16 +1,16 @@
 const stockProductos = [
-    {id: 1, nombre: "Buzo 1", descripcion: "Un buzo que re va con vos", precio: 1200, talle: "L", img: '../assets/images/buzoCremaNena.jpg', cantidad: 1},
-    {id: 2, nombre: "Buzo 2", descripcion: "Un buzo que re va con vos", precio: 1100, talle: "L", img: "../assets/images/buzoGrisNene.jpg", cantidad: 1},
-    {id: 3, nombre: "Buzo 3", descripcion: "Un buzo que re va con vos", precio: 1200, talle: "M", img: '../assets/images/buzoHombre.jpg', cantidad: 1},
-    {id: 4, nombre: "Buzo 4", descripcion: "Un buzo que re va con vos", precio: 1400, talle: "M", img: '../assets/images/buzoHombreCeleste.jpg', cantidad: 1},
-    {id: 5, nombre: "Buzo 5", descripcion: "Un buzo que re va con vos", precio: 1200, talle: "S", img: '../assets/images/buzoMujer.jpg', cantidad: 1},
-    {id: 6, nombre: "Buzo 6", descripcion: "Un buzo que re va con vos", precio: 1500, talle: "S", img: '../assets/images/buzoRosaMujer.jpg', cantidad: 1},
-    {id: 7, nombre: "Remera 1", descripcion: "Una remera que re va con vos", precio: 500, talle: "L", img: '../assets/images/camisetaRayadaNene.jpg', cantidad: 1},
-    {id: 8, nombre: "Remera 2", descripcion: "Una remera que re va con vos", precio: 500, talle: "L", img: '../assets/images/remeraAmarillaHombre.jpg', cantidad: 1},
-    {id: 9, nombre: "Remera 3", descripcion: "Una remera que re va con vos", precio: 500, talle: "M", img: '../assets/images/remeraBlancaHombre.jpg', cantidad: 1},
-    {id: 10, nombre: "Remera 4", descripcion: "Una remera que re va con vos", precio: 700, talle: "M", img: '../assets/images/remeraMostazaHombre.jpg', cantidad: 1},
-    {id: 11, nombre: "Remera 5",descripcion: "Una remera que re va con vos", precio: 700, talle: "S", img: '../assets/images/remeraNegraMujer.jpg', cantidad: 1},
-    {id: 12, nombre: "Remera 6", descripcion: "Una remera que re va con vos", precio: 700, talle: "S", img: '../assets/images/camisaCelesteHombre.jpg', cantidad: 1},
+    {id: 1, nombre: "Buzo 1", descripcion: "Un buzo ", precio: 1200, talle: "L", img: '../assets/images/buzoCremaNena.jpg', cantidad: 1},
+    {id: 2, nombre: "Buzo 2", descripcion: "Un buzo ", precio: 1100, talle: "L", img: "../assets/images/buzoGrisNene.jpg", cantidad: 1},
+    {id: 3, nombre: "Buzo 3", descripcion: "Un buzo ", precio: 1200, talle: "M", img: '../assets/images/buzoHombre.jpg', cantidad: 1},
+    {id: 4, nombre: "Buzo 4", descripcion: "Un buzo ", precio: 1400, talle: "M", img: '../assets/images/buzoHombreCeleste.jpg', cantidad: 1},
+    {id: 5, nombre: "Buzo 5", descripcion: "Un buzo ", precio: 1200, talle: "S", img: '../assets/images/buzoMujer.jpg', cantidad: 1},
+    {id: 6, nombre: "Buzo 6", descripcion: "Un buzo ", precio: 1500, talle: "S", img: '../assets/images/buzoRosaMujer.jpg', cantidad: 1},
+    {id: 7, nombre: "Remera 1", descripcion: "Una remera ", precio: 500, talle: "L", img: '../assets/images/camisetaRayadaNene.jpg', cantidad: 1},
+    {id: 8, nombre: "Remera 2", descripcion: "Una remera ", precio: 500, talle: "L", img: '../assets/images/remeraAmarillaHombre.jpg', cantidad: 1},
+    {id: 9, nombre: "Remera 3", descripcion: "Una remera ", precio: 500, talle: "M", img: '../assets/images/remeraBlancaHombre.jpg', cantidad: 1},
+    {id: 10, nombre: "Remera 4", descripcion: "Una remera ", precio: 700, talle: "M", img: '../assets/images/remeraMostazaHombre.jpg', cantidad: 1},
+    {id: 11, nombre: "Remera 5",descripcion: "Una remera ", precio: 700, talle: "S", img: '../assets/images/remeraNegraMujer.jpg', cantidad: 1},
+    {id: 12, nombre: "Remera 6", descripcion: "Una camisa ", precio: 700, talle: "S", img: '../assets/images/camisaCelesteHombre.jpg', cantidad: 1},
 ];
 
 let carrito = [];
@@ -21,9 +21,15 @@ const vaciarCarrito = document.querySelector("#vaciarCarrito")
 const precioTotal = document.querySelector("#precioTotal")
 const seguirCompra = document.querySelector("#seguirCompra")
 const activarFuncion = document.querySelector("#activarFuncion")
+const totalCompra = document.querySelector("#totalCompra")
+const formulario = document.querySelector("#procesar-pago")
 
 if (activarFuncion) {
     activarFuncion.addEventListener("click", seguirPedido)
+}
+
+if(formulario){
+    formulario.addEventListener("submit", enviarPedido)
 }
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -164,8 +170,31 @@ function seguirPedido(){
 
         listaCompra.appendChild(row)
     })
+    totalCompra.innerText = carrito.reduce((acc, producto) => acc + producto.cantidad * producto.precio, 0)
 }
 
+function enviarPedido(e) {
+    e.preventDefault()
+    const cliente = document.querySelector("#cliente").value
+    const correo = document.querySelector("#correo").value
+
+    if (correo === "" || cliente === "") {
+        Swal.fire({
+            title: "Debes completar todos las campos",
+            text: "Por favor rellena el formulario",
+            icon: "error",
+            confirmButtonText: "Aceptar"
+        })
+    } else {
+        Swal.fire({
+            title: "GRACIAS POR TU COMPRA",
+            text: "Esperamos que te guste",
+            icon: "success",
+            confirmButtonText: "Aceptar"
+        })
+        formulario.reset()
+    }
+}
 
 
 
