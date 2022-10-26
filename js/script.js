@@ -118,8 +118,8 @@ const mostrarCarrito = () => {
                 <h5>${nombre}</h5>
                 <h5>${precio}</h5>
                 <h5>${descripcion}</h5>
-                <p>${talle}</p>
-                <p>${cantidad}</p>
+                <p class = "fuente-parrafo">Talle: ${talle}</p>
+                <p class = "fuente-parrafo">Cantidad: ${cantidad}</p>
                 <button onclick="eliminarProducto(${id})" class = "btn btn-danger">Eliminar producto</button>
             </div>
         </div>
@@ -164,6 +164,7 @@ function seguirPedido(){
             </td>
             <td>${nombre}</td>
             <td>${precio}</td>
+            <td>${talle}</td>
             <td>${cantidad}</td>
             <td>${precio * cantidad}</td>
         `
@@ -178,7 +179,7 @@ function enviarPedido(e) {
     const cliente = document.querySelector("#cliente").value
     const correo = document.querySelector("#correo").value
 
-    if (correo === "" || cliente === "") {
+    if (cliente === "" || correo === "") {
         Swal.fire({
             title: "Debes completar todos las campos",
             text: "Por favor rellena el formulario",

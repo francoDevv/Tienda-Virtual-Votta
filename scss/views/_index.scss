@@ -6,11 +6,6 @@
     .card_fuente{
         font-style: $italic;
     }
-    .colorButton{
-        background-color: $tertiary-color;
-        color: $main-color;
-        border: 0.5px solid black;
-    }
 }
 
 #contenedor-productos {
@@ -37,3 +32,29 @@
     width:200px;
     padding:20px;
 } 
+
+.colorButton{
+    background-color: $tertiary-color;
+    color: $main-color;
+    border: 0.5px solid black;
+}
+
+.fuente-parrafo{
+    font-family: $fira-sans-font;
+}
+
+.btn{
+    margin: 10px 10px;
+}
+
+.color-boton-continuar{
+    background-color: #4CAF50;
+    color: white;
+    border: 0.5px solid black;
+}
+
+.btn-seguir-comprando{
+    background-color: $tertiary-color;
+    color: $main-color;
+    border: 0.5px solid black;
+}

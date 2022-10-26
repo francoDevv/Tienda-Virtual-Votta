@@ -47,6 +47,11 @@
   margin-left: auto;
   margin-right: auto;
 }
+.header .colorCarrito {
+  color: black;
+  font-size: 80%;
+  cursor: pointer;
+}
 
 .tituloPrincipal {
   font-family: "Secular One", sans-serif;
@@ -292,11 +297,6 @@ h5 {
 .imgProductos .card_fuente {
   font-style: italic;
 }
-.imgProductos .colorButton {
-  background-color: #B40000;
-  color: white;
-  border: 0.5px solid black;
-}
 
 #contenedor-productos {
   max-width: 1200px;
@@ -333,6 +333,32 @@ h5 {
 .img-carrito {
   width: 200px;
   padding: 20px;
+}
+
+.colorButton {
+  background-color: #B40000;
+  color: white;
+  border: 0.5px solid black;
+}
+
+.fuente-parrafo {
+  font-family: "Fira Sans Condensed", sans-serif;
+}
+
+.btn {
+  margin: 10px 10px;
+}
+
+.color-boton-continuar {
+  background-color: #4CAF50;
+  color: white;
+  border: 0.5px solid black;
+}
+
+.btn-seguir-comprando {
+  background-color: #B40000;
+  color: white;
+  border: 0.5px solid black;
 }
 
 .imgProductos {
@@ -792,4 +818,4 @@ h5 {
     width: 50%;
     padding-top: 10px;
   }
-}
+}/*# sourceMappingURL=style.css.map */
