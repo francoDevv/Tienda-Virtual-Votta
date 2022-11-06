@@ -101,6 +101,8 @@ function agregarProducto(id){
     mostrarCarrito()
 };
 
+
+
 const mostrarCarrito = () => {
     const modalBody = document.querySelector(".modal .modal-body")
 
