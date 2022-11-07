@@ -1,0 +1,121 @@
+[
+    {
+        "id": 1, 
+        "nombre":"Buzo 1",
+        "descripcion":"Un buzo",
+        "precio":1200,
+        "talle":"L",
+        "img":"../assets/images/buzoCremaNena.jpg",
+        "cantidad": 1
+    },
+
+    {
+        "id": 2, 
+        "nombre":"Buzo 2",
+        "descripcion":"Un buzo",
+        "precio":1100,
+        "talle":"L",
+        "img":"../assets/images/buzoGrisNene.jpg",
+        "cantidad": 1
+    },
+
+    {
+        "id": 3, 
+        "nombre":"Buzo 3",
+        "descripcion":"Un buzo",
+        "precio":1200,
+        "talle":"M",
+        "img":"../assets/images/buzoHombre.jpg",
+        "cantidad": 1
+    },
+
+    {
+        "id": 4, 
+        "nombre":"Buzo 4",
+        "descripcion":"Un buzo",
+        "precio":1400,
+        "talle":"L",
+        "img":"../assets/images/buzoHombreCeleste.jpg",
+        "cantidad": 1
+    },
+
+    {
+        "id": 5, 
+        "nombre":"Buzo 5",
+        "descripcion":"Un buzo",
+        "precio":1200,
+        "talle":"M",
+        "img":"../assets/images/buzoMujer.jpg",
+        "cantidad": 1
+    },
+
+    {
+        "id": 6, 
+        "nombre":"Buzo 6",
+        "descripcion":"Un buzo",
+        "precio":1500,
+        "talle":"S",
+        "img":"../assets/images/buzoRosaMujer.jpg",
+        "cantidad": 1
+    },
+
+    {
+        "id":7,
+        "nombre":"Remera 1",
+        "descripcion":"Una remera ",
+        "precio":500,
+        "talle":"L",
+        "img":"../assets/images/camisetaRayadaNene.jpg",
+        "cantidad":1
+    },
+
+    {
+        "id":8,
+        "nombre":"Remera 2",
+        "descripcion":"Una remera ",
+        "precio":500,
+        "talle":"M",
+        "img":"../assets/images/remeraAmarillaHombre.jpg",
+        "cantidad":1
+    },
+
+    {
+        "id":9,
+        "nombre":"Remera 3",
+        "descripcion":"Una remera ",
+        "precio":700,
+        "talle":"S",
+        "img":"../assets/images/remeraBlancaHombre.jpg",
+        "cantidad":1
+    },
+
+    {
+        "id":10,
+        "nombre":"Remera 4",
+        "descripcion":"Una remera ",
+        "precio":800,
+        "talle":"M",
+        "img":"../assets/images/remeraMostazaHombre.jpg",
+        "cantidad":1
+    },
+
+    {
+        "id":11,
+        "nombre":"Remera 5",
+        "descripcion":"Una remera ",
+        "precio":650,
+        "talle":"S",
+        "img":"../assets/images/remeraNegraMujer.jpg",
+        "cantidad":1
+    },
+
+    {
+        "id":12,
+        "nombre":"Camisa",
+        "descripcion":"Una camisa ",
+        "precio":1050,
+        "talle":"M",
+        "img":"../assets/images/camisaCelesteHombre.jpg",
+        "cantidad":1
+    }
+]
