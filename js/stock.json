@@ -5,7 +5,7 @@
         "descripcion":"Un buzo",
         "precio":1200,
         "talle":"L",
-        "img":"../assets/images/buzoCremaNena.jpg",
+        "img":"./assets/images/buzoCremaNena.jpg",
         "cantidad": 1
     },
 
@@ -15,7 +15,7 @@
         "descripcion":"Un buzo",
         "precio":1100,
         "talle":"L",
-        "img":"../assets/images/buzoGrisNene.jpg",
+        "img":"./assets/images/buzoGrisNene.jpg",
         "cantidad": 1
     },
 
@@ -25,7 +25,7 @@
         "descripcion":"Un buzo",
         "precio":1200,
         "talle":"M",
-        "img":"../assets/images/buzoHombre.jpg",
+        "img":"./assets/images/buzoHombre.jpg",
         "cantidad": 1
     },
 
@@ -35,7 +35,7 @@
         "descripcion":"Un buzo",
         "precio":1400,
         "talle":"L",
-        "img":"../assets/images/buzoHombreCeleste.jpg",
+        "img":"./assets/images/buzoHombreCeleste.jpg",
         "cantidad": 1
     },
 
@@ -45,7 +45,7 @@
         "descripcion":"Un buzo",
         "precio":1200,
         "talle":"M",
-        "img":"../assets/images/buzoMujer.jpg",
+        "img":"./assets/images/buzoMujer.jpg",
         "cantidad": 1
     },
 
@@ -55,7 +55,7 @@
         "descripcion":"Un buzo",
         "precio":1500,
         "talle":"S",
-        "img":"../assets/images/buzoRosaMujer.jpg",
+        "img":"./assets/images/buzoRosaMujer.jpg",
         "cantidad": 1
     },
 
@@ -65,7 +65,7 @@
         "descripcion":"Una remera ",
         "precio":500,
         "talle":"L",
-        "img":"../assets/images/camisetaRayadaNene.jpg",
+        "img":"./assets/images/camisetaRayadaNene.jpg",
         "cantidad":1
     },
 
@@ -75,7 +75,7 @@
         "descripcion":"Una remera ",
         "precio":500,
         "talle":"M",
-        "img":"../assets/images/remeraAmarillaHombre.jpg",
+        "img":"./assets/images/remeraAmarillaHombre.jpg",
         "cantidad":1
     },
 
@@ -85,7 +85,7 @@
         "descripcion":"Una remera ",
         "precio":700,
         "talle":"S",
-        "img":"../assets/images/remeraBlancaHombre.jpg",
+        "img":"./assets/images/remeraBlancaHombre.jpg",
         "cantidad":1
     },
 
@@ -95,7 +95,7 @@
         "descripcion":"Una remera ",
         "precio":800,
         "talle":"M",
-        "img":"../assets/images/remeraMostazaHombre.jpg",
+        "img":"./assets/images/remeraMostazaHombre.jpg",
         "cantidad":1
     },
 
@@ -105,7 +105,7 @@
         "descripcion":"Una remera ",
         "precio":650,
         "talle":"S",
-        "img":"../assets/images/remeraNegraMujer.jpg",
+        "img":"./assets/images/remeraNegraMujer.jpg",
         "cantidad":1
     },
 
@@ -115,7 +115,7 @@
         "descripcion":"Una camisa ",
         "precio":1050,
         "talle":"M",
-        "img":"../assets/images/camisaCelesteHombre.jpg",
+        "img":"./assets/images/camisaCelesteHombre.jpg",
         "cantidad":1
     }
 ]
