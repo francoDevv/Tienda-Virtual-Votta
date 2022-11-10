@@ -1,18 +1,3 @@
-// const stockProductos = [
-//     {id: 1, nombre: "Buzo 1", descripcion: "Un buzo ", precio: 1200, talle: "L", img: './assets/images/buzoCremaNena.jpg', cantidad: 1},
-//     {id: 2, nombre: "Buzo 2", descripcion: "Un buzo ", precio: 1100, talle: "L", img: "./assets/images/buzoGrisNene.jpg", cantidad: 1},
-//     {id: 3, nombre: "Buzo 3", descripcion: "Un buzo ", precio: 1200, talle: "M", img: './assets/images/buzoHombre.jpg', cantidad: 1},
-//     {id: 4, nombre: "Buzo 4", descripcion: "Un buzo ", precio: 1400, talle: "M", img: './assets/images/buzoHombreCeleste.jpg', cantidad: 1},
-//     {id: 5, nombre: "Buzo 5", descripcion: "Un buzo ", precio: 1200, talle: "S", img: './assets/images/buzoMujer.jpg', cantidad: 1},
-//     {id: 6, nombre: "Buzo 6", descripcion: "Un buzo ", precio: 1500, talle: "S", img: './assets/images/buzoRosaMujer.jpg', cantidad: 1},
-//     {id: 7, nombre: "Remera 1", descripcion: "Una remera ", precio: 500, talle: "L", img: './assets/images/camisetaRayadaNene.jpg', cantidad: 1},
-//     {id: 8, nombre: "Remera 2", descripcion: "Una remera ", precio: 500, talle: "L", img: './assets/images/remeraAmarillaHombre.jpg', cantidad: 1},
-//     {id: 9, nombre: "Remera 3", descripcion: "Una remera ", precio: 500, talle: "M", img: './assets/images/remeraBlancaHombre.jpg', cantidad: 1},
-//     {id: 10, nombre: "Remera 4", descripcion: "Una remera ", precio: 700, talle: "M", img: './assets/images/remeraMostazaHombre.jpg', cantidad: 1},
-//     {id: 11, nombre: "Remera 5",descripcion: "Una remera ", precio: 700, talle: "S", img: './assets/images/remeraNegraMujer.jpg', cantidad: 1},
-//     {id: 12, nombre: "Remera 6", descripcion: "Una camisa ", precio: 700, talle: "S", img: './assets/images/camisaCelesteHombre.jpg', cantidad: 1},
-// ];
-
 let carrito = [];
 
 const contenedorProductos=document.querySelector("#contenedor-productos")
@@ -41,28 +26,8 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 });
 
-// stockProductos.forEach((producto) => {
-//     const {id, nombre, descripcion, precio, talle, img}=producto
-
-//     if(contenedorProductos){
-//         contenedorProductos.innerHTML += `
-//     <div class="card text-center" style="width: 18rem;">
-//         <img src="${img}" class="card-img-top mt-2" alt="imagen de jean" loading="lazy">
-//         <div class="card-body">
-//             <h5 class="card-title">${nombre}</h5>
-//             <h5 class="card-title">$${precio}</h5>
-//             <p class="card-text card_fuente">${descripcion}</p>
-//             <p class="card-text card_fuente">Talles : ${talle}</p>
-//             <button onclick="agregarProducto(${id})" class="btn colorButton d-none">Agregar al carrito</button>
-//         </div>
-//     </div>
-//     `
-//     }
-    
-// });
-
 function mostrarStock(){
-    fetch('../js/stock.json')
+    fetch('./js/stock.json')
         .then(respuesta => respuesta.json())
         .then(productos => {
             productos.forEach(producto => {
