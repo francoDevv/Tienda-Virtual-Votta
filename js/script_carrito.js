@@ -1,3 +1,4 @@
+//STOCK
 const stockProductosNiños = [
     {id: 1, nombre: "Buzo 1", descripcion: "Un buzo ", precio: 1200, talle: "L", img: '../assets/images/buzoCremaNena.jpg', cantidad: 1},
     {id: 2, nombre: "Buzo 2", descripcion: "Un buzo ", precio: 1100, talle: "L", img: "../assets/images/buzoGrisNene.jpg", cantidad: 1},
@@ -13,6 +14,7 @@ const stockProductosNiños = [
     {id: 12, nombre: "Remera 6", descripcion: "Una camisa ", precio: 700, talle: "S", img: '../assets/images/camisaCelesteHombre.jpg', cantidad: 1},
 ];
 
+//VARIABLES
 let carrito = [];
 
 const contenedorProductos=document.querySelector("#contenedor-productos")
@@ -24,6 +26,7 @@ const activarFuncion = document.querySelector("#activarFuncion")
 const totalCompra = document.querySelector("#totalCompra")
 const formulario = document.querySelector("#procesar-pago")
 
+//EVENTOS
 if (activarFuncion) {
     activarFuncion.addEventListener("click", seguirPedido)
 }
@@ -41,12 +44,13 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 });
 
+//MOSTRAR PRODUCTOS EN EL DOM
 stockProductosNiños.forEach((producto) => {
     const {id, nombre, descripcion, precio, talle, img}=producto
 
     if(contenedorProductos){
         contenedorProductos.innerHTML += `
-    <div class="card text-center" style="width: 18rem;">
+    <div class="card text-center articulo" style="width: 18rem;">
         <img src="${img}" class="card-img-top mt-2" alt="imagen de jean" loading="lazy">
         <div class="card-body">
             <h5 class="card-title">${nombre}</h5>
@@ -61,13 +65,13 @@ stockProductosNiños.forEach((producto) => {
     
 });
 
-
+// EVALUAMOS SI HAY PRODUCTOS
 if (seguirCompra) {
     seguirCompra.addEventListener("click", () => {
         if (carrito.length === 0){
             Swal.fire({
                 title: "¡Tu carrito está vacio!",
-                text: "Compra algo para continuar con la compra",
+                text: "Agrega algo para continuar con la compra",
                 icon: "error",
                 confirmButtonText: "Aceptar",
         })
@@ -77,6 +81,7 @@ if (seguirCompra) {
     })
 }
 
+//VACIAR CARRITO
 if(vaciarCarrito){
     vaciarCarrito.addEventListener("click", () => {
         carrito.length = []
@@ -84,7 +89,7 @@ if(vaciarCarrito){
     })
 }
 
-
+//AGREGAR PRODUCTO
 function agregarProducto(id){
     const existe = carrito.some(prod => prod.id === id)
     if (existe) {
@@ -101,6 +106,7 @@ function agregarProducto(id){
     mostrarCarrito()
 };
 
+//MOSTRAR EL CARRITO
 const mostrarCarrito = () => {
     const modalBody = document.querySelector(".modal .modal-body")
 
@@ -143,16 +149,20 @@ const mostrarCarrito = () => {
     guardarStorage()
 }
 
+//ELIMINAR PRODUCTO
 function eliminarProducto(id){
     const prodId = id
     carrito = carrito.filter((prod) => prod.id !== prodId)
     mostrarCarrito()
 }
 
+
+//GUARDAR EL STORAGE
 function guardarStorage(){
     localStorage.setItem("carrito", JSON.stringify(carrito))
 }
 
+//CONTINUAMOS CON LA COMPRA
 function seguirPedido(){
     carrito.forEach((producto) => {
         const listaCompra = document.querySelector("#lista-compra tbody")
@@ -174,6 +184,7 @@ function seguirPedido(){
     totalCompra.innerText = carrito.reduce((acc, producto) => acc + producto.cantidad * producto.precio, 0)
 }
 
+//EVALUAMOS SI SE COMPLETAN LOS DATOS PARA LA CONFIRMACION DE LA COMPRA
 function enviarPedido(e) {
     e.preventDefault()
     const cliente = document.querySelector("#cliente").value
@@ -194,5 +205,18 @@ function enviarPedido(e) {
             confirmButtonText: "Aceptar"
         })
         formulario.reset()
+        location.href = "../index.html"
     }
 }
+
+//BUSCADOR
+document.addEventListener("keyup", e => {
+    if (e.target.matches("#buscador")) {
+        if (e.key === "Escape")e.target.value = ""
+        document.querySelectorAll(".articulo").forEach(ropa => {
+            ropa.textContent.toLowerCase().includes(e.target.value.toLowerCase())
+            ?ropa.classList.remove("filtro")
+            :ropa.classList.add("filtro")
+        })
+    }
+})

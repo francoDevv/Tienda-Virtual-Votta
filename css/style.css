@@ -89,6 +89,10 @@ h5 {
   font-size: 1.4rem;
 }
 
+.filtro {
+  display: none;
+}
+
 .footer {
   background-color: black;
   margin-top: 10px;
