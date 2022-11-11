@@ -205,7 +205,6 @@ function enviarPedido(e) {
             confirmButtonText: "Aceptar"
         })
         formulario.reset()
-        location.href = "../index.html"
     }
 }
 
